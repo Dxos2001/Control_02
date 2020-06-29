@@ -148,7 +148,7 @@ public class UsuarioModel {
 		PreparedStatement pstm = null;
 		int salida = -1;
 		try {
-			String sql = "delete from usuario where idusuario =?";
+			String sql = "delete from usuario where idUsuario =?";
 			conn = MySqlDBConexion.getConexion();
 			pstm = conn.prepareStatement(sql);
 			pstm.setInt(1, id);
